@@ -1,40 +1,177 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Oxygen" rel="stylesheet">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <title>CyberMiner 2025 Build-Your-Own Computer Session</title>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section id="start" data-background="rgba(0, 0, 0, .35)">
+                <h1>CyberMiner 2025 Build-Your-Own Computer</h1>
+                <h3>A beginner’s guide to understanding
+                    <br> & building a computer from parts</h3>
+
+                <p>
+                    <h6>Created by Don Howdeshell</h6>
+                </p>
+            </section>
+            <section data-background="assets/mstsignnight.png" id="intro0" data-background="rgba(0, 0, 0, .35)">
+                <block background="rgba(255, 255, 255, 0.05)">
+                    <h1>Introduction</h1>
+                    <p>
+                        <span>
+                            <h2>Don Howdeshell</h2>
+                        </span>
+
+                        <span class="fragment">
+                            <h5>University of Missouri - Rolla / Missouri University of Science & Technology</h5>
+                        </span>
+                        <span class="fragment">
+                            <h5>BS in Information Science and Technology</h5>
+                        </span>
+                        <span class="fragment">
+                            <h5>20 years at UMR/S&T - Systems Administrator</h5>
+                        </span>
+                        <span class="fragment">
+                            <h5>11 years with ITRSS</h5>
+                            <br>
+                            <img style="border: none; box-shadow: none;" width="200" height="62" data-src="assets/paper-logo-white.png">
+                        </span>
+                    </p>
+                </block>
+            </section>
+            <section data-background="assets/donoffice.jpg" id="intro1" data-background="rgba(0, 0, 0, .35)">
+                <block background="rgba(255, 255, 255, 0.05)">
+                    <p>
+                        <span>
+                            <h2>Software & Hardware Development</h2>
+                        </span>
+
+                        <span class="fragment">
+                            <h5>MinerBytes</h5>
+                        </span>
+                        <span class="fragment">
+                            <h5>Embedded Systems</h5>
+                        </span>
+                        <span class="fragment">
+                            <h5>Server Administration</h5>
+                        </span>
+                        <span class="fragment">
+                            <h5>A little bit of everything</h5>
+                        </span>
+                        <span class="fragment">
+                            <h5>RTD apps, RTiD, MinerTrax, Nonavitra, microcontrollers</h5>
+                        </span>
+                    </p>
+                </block>
+            </section>
+            <section id="projects">
+                <section id="lines" data-background="rgba(0, 0, 0, .35)">
+                    <h2>MinerBytes, RTiD, RTD Apps</h2>
+                    <p>
+                        <ul>
+                            <li>
+                                <h3>Android: 558,000 Lines</h3>
+                            </li>
+                            <li>
+                                <h3>iOS: 509,000 Lines</h3>
+                            </li>
+                            <li>
+                                <h3>MinerBytes v3: 93,000 Lines</h3>
+                            </li>
+                            <li>
+                                <h3>RTiD: 4,000 Lines</h3>
+                            </li>
+                        </ul>
+                    </p>
+                </section>
+                <section id="mb_screens" data-background="assets/mbv3/screens.png"></section>
+                <section id="mb_playlist" data-background="assets/mbv3/playlist.png"></section>
+                <section id="mb_playlistrows" data-background="assets/mbv3/playlistrows.png"></section>
+                <section id="mb_content" data-background="assets/mbv3/content.png"></section>
+                <section id="rtid0" data-background="assets/rtid.png">
+                    <h2>RTiD: NFC-Based Attendance System</h2>
+                </section>
+                <section id="rtid1" data-background="assets/rtid1.png">
+                    <span class="fragment">
+                        <h2>RTiD: NFC-Based Attendance System</h2>
+                    </span>
+                    <p>
+                        <ul>
+                            <span class="fragment">
+                                <li>
+                                    <h3>Scans NFC Tag</h3>
+                                </li>
+                            </span>
+                            <span class="fragment">
+                                <li>
+                                    <h3>Flashes RGB LEDs on success or failure</h3>
+                                </li>
+                            </span>
+                            <span class="fragment">
+                                <li>
+                                    <h3>Caches the data until it can send it to Web App</h3>
+                                </li>
+                            </span>
+                            <span class="fragment">
+                                <li>
+                                    <h3>Battery management in software</h3>
+                                </li>
+                            </span>
+                            <span class="fragment">
+                                <li>
+                                    <h3>Software to handle WiFi, errors, failures, parsing, etc.</h3>
+                                </li>
+                            </span>
+                        </ul>
+                    </p>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
 </html>
